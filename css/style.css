@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 'title title title'
+    'art1 art2 art4'
+    'art1 art3 art4';
+}
+
+h1 {
+    color: #4c4e61;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+strong {
+    color: #4c4e61;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #4c4e61;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+span {
+    word-spacing: 1px;
+    color: #a3a5ae;
+    font-weight: 200;
+}
+
+.img {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box {
+    margin: 1rem 0.5rem;
+    padding: 2rem;
+    max-width: 350px;
+    min-width: 311px;
+    height: 250px;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 10px 0px #c7e6f0;
+}
+
+.uno{
+    margin: 4rem 0 4rem;
+    max-width: 35rem;
+    grid-area: title;
+    text-align: center;
+    justify-self: center;
+}
+
+.dos {
+    grid-area: art1;
+    align-self: center;
+    justify-self: flex-end;
+    background-image: linear-gradient(#45d3d3 2%, white 2%);
+}
+
+.tres {
+    grid: art2;
+    background-image: linear-gradient(#ea5353 2%, white 2%);
+    align-self: center;
+    justify-self: center;
+}
+
+.cuatro {
+    grid-area: art3;
+    background-image: linear-gradient(#fcaf4a 2%, white 2%);
+    align-self: center;
+    justify-self: center;
+}
+
+.cinco {
+    grid-area: art4;
+    background-image: linear-gradient(#549ef2 2%, white 2%);
+    align-self: center;
+    justify-self: flex-start;
+}
+
+@media screen and (max-width: 375px) {
+    .contenedor {
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    h1, strong {
+        font-size: 1.5rem;
+    }
+}
